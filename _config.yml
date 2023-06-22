@@ -1,13 +1,13 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Het Leenstelsel in Grafieken # Change this to your book title.
+title: Het Leenstelsel # Change this to your book title.
 author: group N2 # Change this to your name (or your team/organization name).
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks: false
 
 # Define the name of the latex output file for PDF builds
 latex:
