@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Het Leenstelsel Gevisualiseerd # Change this to your book title.
-author: groep N2 # Change this to your name (or your team/organization name).
+title: Het Leenstelsel in Grafieken # Change this to your book title.
+author: group N2 # Change this to your name (or your team/organization name).
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -12,11 +12,11 @@ execute:
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
-    targetname: book.tex
+    targetname: leenstelsel.tex
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/AbeDijkstra03/Jupyter-book  # Online location of your book (change this to your GitHub repository link)
+  url: https://github.com/AbeDijkstra03/DataStory  # Online location of your book (change this to your GitHub repository link)
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 

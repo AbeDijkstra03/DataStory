@@ -1,3 +1,3 @@
-# jupyter-book-template
+# Het Leenstelsel
 
-This repository hosts the tutorial and template code for building a basic Jupyter Book website.
+Deze repository bevat de datastory van groep N2
