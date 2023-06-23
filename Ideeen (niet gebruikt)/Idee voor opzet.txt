@@ -1,0 +1,21 @@
+'Het principe van het leenstelsel: studenten moeten meer gaan betalen en dat geld moet gebruikt worden om de kwaliteit van het onderwijs te verbeteren.'
+
+-Geen effect op instroom studenten: aantal studenten blijft stijgen
+Lijngrafiek
+
+-We laten mensen slecht aan hun levens beginnen: studieschulden van studenten worden steeds hoger
+Staafdiagram
+
+-Verwachte lonen later tegenover verwachte studieschuld: studeren loont nog steeds en dit kan makkelijk afbetaald worden.
+Boxplots?
+
+-Het geld dat voor beter onderwijs zou moeten zorgen, komt vaak niet op de juiste plek terecht (maar er is dus wel degelijk extra geld voor de verbetering van het onderwijs)
+Lijngrafiek met meerdere lijnen?
+
+-Negatieve veelomvattende statistiek: studenten zijn minder tevreden
+Scatter plot
+
+-Totaalplaatje: Totale kosten tegenover totale baten:
+Lijngrafiek met meerdere lijnen?
+
+'Conclusie zonder verdere visualisatie'

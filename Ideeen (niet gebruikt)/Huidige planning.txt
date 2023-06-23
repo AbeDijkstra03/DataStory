@@ -1,0 +1,21 @@
+Jupyter Book:
+Tutorial verwijderen
+Titel niet in contents
+Plaatje toevoegen bovenaan?
+Deelkoppen maken voor contents
+Codeblocks dropdown maken
+Code clean-up
+Ondertitels deel van de cel maken
+Grafieken sorteren per perspectief
+Groepsnaam veranderen in group N2 / 60
+Dataset vooraf cleanen?
+Eventuele schetsen en extra grafieken in GitHub repository zetten?
+
+Dataset en preprocessing verhaal schrijven
+Alle (gebruikte) variabelen uitleggen
+Verschillende interactieve grafieken bedenken
+Nieuwe interactieve grafieken programmeren
+Bedenken welke grafieken we willen houden
+Reflectie schrijven (na dinsdag)
+Dinsdag naar het werkcollege gaan
+Werkverdeling bijwerken (achteraf)
