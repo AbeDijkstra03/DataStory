@@ -10,4 +10,8 @@ Nieuwe interactieve grafieken programmeren
 Bedenken welke grafieken we willen houden
 Dinsdag naar het werkcollege gaan
 Reflectie schrijven (na dinsdag)
+<<<<<<< HEAD
 Werkverdeling bijwerken (achteraf)
+=======
+Werkverdeling bijwerken (achteraf)
+>>>>>>> 7cce378f497a734e144bdd79ef44e094330d52e4
