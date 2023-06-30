@@ -1,0 +1,745 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Het Leenstelsel &#8212; Data Story</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/Het Leenstelsel';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Niet-gebruikte Grafieken" href="Niet-gebruikte%20Grafieken.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Data Story</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Het Leenstelsel
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Niet-gebruikte%20Grafieken.html">Niet-gebruikte Grafieken</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/AbeDijkstra03/DataStory" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/AbeDijkstra03/DataStory/issues/new?title=Issue%20on%20page%20%2Fdocs/Het Leenstelsel.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/Het Leenstelsel.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Het Leenstelsel</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introductie">Introductie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-en-voorbereiding">Dataset en voorbereiding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#het-eerste-perspectief">Het Eerste Perspectief</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#het-eerste-argument-voor-het-eerste-perspectief">Het eerste argument voor het eerste perspectief</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#het-tweede-argument-voor-het-eerste-perspectief">Het tweede argument voor het eerste perspectief</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#het-derde-argument-voor-het-eerste-perspectief">Het derde argument voor het eerste perspectief</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#het-tweede-perspectief">Het Tweede Perspectief</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#het-eerste-argument-voor-het-tweede-perspectief">Het eerste argument voor het tweede perspectief</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#het-tweede-argument-voor-het-tweede-perspectief">Het tweede argument voor het tweede perspectief</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusie">Conclusie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflectie">Reflectie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#werkverdeling">Werkverdeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#literatuurlijst">Literatuurlijst</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="het-leenstelsel">
+<h1>Het Leenstelsel<a class="headerlink" href="#het-leenstelsel" title="Permalink to this headline">#</a></h1>
+<p>door groep N2 / 60:</p>
+<ul class="simple">
+<li><p>Abe Dijkstra</p></li>
+<li><p>Shilana Rajabi Haji Khosh</p></li>
+<li><p>Sem Loogman</p></li>
+<li><p>Sam Zwarts</p></li>
+</ul>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://img.parool.nl/251267d54c362a760e6ce4aed1cbaf7b7b2a60df/de-onvrede-over-het-leenstelsel-neemt-toe-wat-nu&#39;</span>
+
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">display</span>
+
+<span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">920</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;© Het Parool / ANP&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="https://img.parool.nl/251267d54c362a760e6ce4aed1cbaf7b7b2a60df/de-onvrede-over-het-leenstelsel-neemt-toe-wat-nu" width="920"/></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>© Het Parool / ANP
+</pre></div>
+</div>
+</div>
+</div>
+<section id="introductie">
+<h2>Introductie<a class="headerlink" href="#introductie" title="Permalink to this headline">#</a></h2>
+<p>Hoe het hoger onderwijs moet worden gefinancierd is al lange tijd een lastig onderwerp in Nederland. Moeten de studenten zelf hun geld lenen of is een donatie van de overheid (oftewel een beurs) een betere optie? Sinds 1 september 2015 is het leenstelsel toegepast in Nederland. Hierbij kan de student, voor een relatief lage rente, geld lenen tijdens de studiejaren. Op dit moment is dit 0,46% rente per jaar. Ook zijn er mogelijkheden voor een aanvullende beurs, de hoogte hiervan wordt aan de hand van het inkomen van de ouders bepaald. Ook
+Dit systeem gaat veranderen dit jaar, de basisbeurs wordt weer ingevoerd. Nederland gebruikte een vergelijkbaar systeem voordat het leenstelsel werd ingevoerd. Hierbij zullen studenten een bedrag van €274,90 krijgen per maand als ze uitwonend zijn of €110,30 als ze thuiswonend zijn (Ministerie van Algemene Zaken, 2023). Dit bedrag wordt omgezet naar een gift als de studenten binnen 10 jaar hun diploma halen. Dit betekent dat de studenten dus weer ‘gratis’ geld gaan krijgen elke maand.
+Deze verandering heeft veel tijd gekost in de politiek en is uiteindelijk ontstaan wegens onvrede met het leenstelsel. Maar is deze onvrede wel terecht? Is het leenstelsel een negatief systeem voor studenten? Om hierachter te komen zullen wij de periode rond het invoeren van het leenstelsel onderzoeken. Hierbij zullen wij twee verschillende perspectieven aanhouden. Volgens ons eerste perspectief was het leenstelsel een achteruitgang vergeleken met de voorgaande basisbeurs. Volgens ons tweede perspectief was het leenstelsel niet nadelig voor studenten vergeleken met de voorgaande basisbeurs.</p>
+</section>
+<section id="dataset-en-voorbereiding">
+<h2>Dataset en voorbereiding<a class="headerlink" href="#dataset-en-voorbereiding" title="Permalink to this headline">#</a></h2>
+<p>Om te bepalen wat de invloed was van het invoeren van het leenstelsel op het aantal studenten in Nederland is gebruikgemaakt van een database van het CBS (Leerlingen En Studenten; Onderwijssoort, Woonregio, n.d.). Deze database bevat informatie over het aantal leerlingen en studenten in de regio’s binnen Nederland en in het totaal. Deze database is eerst voorbewerkt door de onderwijssoorten te reduceren naar ‘hoger beroepsonderwijs’ en ‘wetenschappelijk onderwijs’. Hiermee worden onderwijssoorten die niet beïnvloed waren door het leenstelsel eruit gefilterd. Ook wordt er alleen naar de locatie ‘Nederland’ gekeken omdat de regio’s zelf niet specifiek worden onderzocht.</p>
+<p>Om te bepalen hoeveel geld er naar het hoger onderwijs is gegaan rond het invoeren van het leenstelsel is gebruikgemaakt van een andere database van het CBS (Onderwijs; Uitgaven Aan Onderwijs En CBS/OESO Indicatoren, n.d.). Hierbij zijn de onderwijssoorten gereduceerd tot ‘hoger beroepsonderwijs’ en ‘wetenschappelijk onderwijs’. Hiermee worden onderwijssoorten die niet beïnvloed waren door het leenstelsel eruit gefilterd.</p>
+<p>Details over de verdere verwerking van de datasets zijn te vinden in het volgende codeblok:</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+
+<span class="c1"># https://opendata.cbs.nl/statline/portal.html?_la=nl&amp;_catalog=CBS&amp;tableId=71450ned&amp;_theme=344</span>
+<span class="c1"># Dataset voor grafische weergave:</span>
+<span class="c1"># Geslacht = Totaal mannen en vrouwen</span>
+<span class="c1"># Leeftijd = Totaal</span>
+<span class="c1"># Onderwijssoort = Hoger beroepsonderwijs &amp; Wetenschappelijk onderwijs</span>
+<span class="c1"># Regio&#39;s = Nederland</span>
+<span class="n">students</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;students.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">quotechar</span><span class="o">=</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
+
+<span class="c1"># https://opendata.cbs.nl/statline/portal.html?_la=nl&amp;_catalog=CBS&amp;tableId=80393ned&amp;_theme=361</span>
+<span class="c1"># Dataset voor grafische weergave:</span>
+<span class="c1"># Onderwijssectoren = Hoger beroepsonderwijs &amp; Wetenschappelijk onderwijs</span>
+<span class="n">spendings</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;spendings.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">quotechar</span><span class="o">=</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
+
+<span class="c1"># Jaren in het goede formaat krijgen</span>
+<span class="n">spendings</span> <span class="o">=</span> <span class="n">spendings</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">Perioden</span><span class="o">=</span><span class="n">spendings</span><span class="p">[</span><span class="s1">&#39;Perioden&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">removesuffix</span><span class="p">(</span><span class="s1">&#39;JJ00&#39;</span><span class="p">))</span>
+<span class="n">students</span> <span class="o">=</span> <span class="n">students</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">Perioden</span><span class="o">=</span><span class="n">students</span><span class="p">[</span><span class="s1">&#39;Perioden&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">removesuffix</span><span class="p">(</span><span class="s1">&#39;SJ00&#39;</span><span class="p">))</span>
+
+<span class="c1"># Schooljaren in plaats van hele jaren</span>
+<span class="n">students</span> <span class="o">=</span> <span class="n">students</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">Perioden</span><span class="o">=</span><span class="n">students</span><span class="p">[</span><span class="s1">&#39;Perioden&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">periode</span><span class="p">:</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">periode</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">periode</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">))</span>
+
+<span class="c1"># Uitgaven in miljoenen</span>
+<span class="n">spendings</span> <span class="o">=</span> <span class="n">spendings</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">TotaalUitgavenAanOnderwijs_1</span><span class="o">=</span><span class="n">spendings</span><span class="p">[</span><span class="s1">&#39;TotaalUitgavenAanOnderwijs_1&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">spendings</span> <span class="o">=</span> <span class="n">spendings</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">TotaalOverheid_2</span><span class="o">=</span><span class="n">spendings</span><span class="p">[</span><span class="s1">&#39;TotaalOverheid_2&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">6</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+</section>
+<section id="het-eerste-perspectief">
+<h2>Het Eerste Perspectief<a class="headerlink" href="#het-eerste-perspectief" title="Permalink to this headline">#</a></h2>
+<p>Volgens het eerste perspectief was het leenstelsel een achteruitgang vergeleken met de voorgaande basisbeurs. Om dit perspectief te onderbouwen zullen drie verschillende onderwerpen worden uitgelicht die zijn beïnvloed door het leenstelsel. Het zal hierbij gaan over het geluk van de studenten, de hogere schulden van studenten en het verschil tussen arme en rijke studenten.</p>
+<section id="het-eerste-argument-voor-het-eerste-perspectief">
+<h3>Het eerste argument voor het eerste perspectief<a class="headerlink" href="#het-eerste-argument-voor-het-eerste-perspectief" title="Permalink to this headline">#</a></h3>
+<p>Studenten zijn minder gelukkig sinds de invoering van het leenstelsel. De invoering van het leenstelsel heeft geleid tot meer studieschuld voor studenten. Dit kan negatieve effecten hebben op de mentale gezondheid van deze studenten. Dit is schadelijk voor studenten en een goede reden dat het leenstelsel een achteruitgang was vergeleken met de voorgaande basisbeurs.</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ruimte voor figuur 1</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<blockquote>
+<div><p><em>Figuur 1: Beschrijvende tekst over figuur 1.</em></p>
+</div></blockquote>
+<p>Onderbouwing eerste argument van eerste perspectief op basis van figuur 1</p>
+</section>
+<section id="het-tweede-argument-voor-het-eerste-perspectief">
+<h3>Het tweede argument voor het eerste perspectief<a class="headerlink" href="#het-tweede-argument-voor-het-eerste-perspectief" title="Permalink to this headline">#</a></h3>
+<p>Studieschuld is toegenomen sinds de invoering van het leenstelsel en er gaat te weinig van dit geld naar het onderwijs in verhouding. Een van de argumenten voor het leenstelsel was dat de extra kosten die studenten gingen maken met het leenstelsel zouden worden geïnvesteerd in het onderwijs. De studenten zouden extra moeten betalen voor hun studie, maar zouden daarvoor ook een betere studie terugkrijgen. Veel van het geld dat studenten hebben moeten betalen wegens het leenstelsel is niet naar het onderwijs gegaan.</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ruimte voor figuur 2</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<blockquote>
+<div><p><em>Figuur 2: Beschrijvende tekst over figuur 2.</em></p>
+</div></blockquote>
+<p>Onderbouwing tweede argument van eerste perspectief op basis van figuur 2.</p>
+</section>
+<section id="het-derde-argument-voor-het-eerste-perspectief">
+<h3>Het derde argument voor het eerste perspectief<a class="headerlink" href="#het-derde-argument-voor-het-eerste-perspectief" title="Permalink to this headline">#</a></h3>
+<p>Het leenstelsel heeft de verschillen tussen arme en rijke studenten vergroot. Studeren in Nederland is altijd al iets geweest wat proportioneel meer werd gedaan door kinderen van rijke ouders dan door kinderen van arme ouders. Dit verschil is toegenomen sinds het invoeren van het leenstelsel. Het invoeren van extra kosten is een groter nadeel voor mensen met een minder bevoordeelde achtergrond dan mensen die wel met deze voordelen zijn opgegroeid.</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ruimte voor figuur 3</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<blockquote>
+<div><p><em>Figuur 3: Beschrijvende tekst over figuur 3.</em></p>
+</div></blockquote>
+<p>Onderbouwing derde argument van eerste perspectief op basis van figuur 3.</p>
+</section>
+</section>
+<section id="het-tweede-perspectief">
+<h2>Het Tweede Perspectief<a class="headerlink" href="#het-tweede-perspectief" title="Permalink to this headline">#</a></h2>
+<p>Volgens het tweede perspectief was het leenstelsel niet nadelig voor studenten vergeleken met de voorgaande basisbeurs. Om dit argument te onderbouwen zullen twee onderwerpen worden behandeld die zijn beïnvloed door het leenstelsel. Het zal hierbij gaan over het totaal aantal studenten en de lonen van hoogopgeleiden vergeleken met laagopgeleiden.</p>
+<section id="het-eerste-argument-voor-het-tweede-perspectief">
+<h3>Het eerste argument voor het tweede perspectief<a class="headerlink" href="#het-eerste-argument-voor-het-tweede-perspectief" title="Permalink to this headline">#</a></h3>
+<p>Het aantal studenten is elk jaar toegenomen, ook sinds het leenstelsel is ingevoerd. Het leenstelsel heeft er dus niet voor gezorgd dat er minder studenten zijn gaan studeren.</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ruimte voor figuur 4</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<blockquote>
+<div><p><em>Figuur 4: Beschrijvende tekst over figuur 4.</em></p>
+</div></blockquote>
+<p>Korte onderbouwing eerste argument van tweede perspectief op basis van figuur 4</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ruimte voor figuur 5</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<blockquote>
+<div><p><em>Figuur 5: Beschrijvende tekst over figuur 5.</em></p>
+</div></blockquote>
+<p>Korte onderbouwing eerste argument van tweede perspectief op basis van figuur 5</p>
+</section>
+<section id="het-tweede-argument-voor-het-tweede-perspectief">
+<h3>Het tweede argument voor het tweede perspectief<a class="headerlink" href="#het-tweede-argument-voor-het-tweede-perspectief" title="Permalink to this headline">#</a></h3>
+<p>Lonen onder hogeropgeleiden zijn gemiddeld hoger dan de lonen van lager opgeleiden. Het is daarom onredelijk om de groep hogeropgeleiden te financieren bij hun studie, omdat ze de schuld hiervan zelf prima kunnen betalen met hun gemiddeld hogere loon.</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ruimte voor figuur 6</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<blockquote>
+<div><p><em>Figuur 6: Beschrijvende tekst over figuur 6.</em></p>
+</div></blockquote>
+<p>Onderbouwing van tweede argument van tweede perspectief op basis van figuur 6</p>
+</section>
+</section>
+<section id="conclusie">
+<h2>Conclusie<a class="headerlink" href="#conclusie" title="Permalink to this headline">#</a></h2>
+<p>Er zijn twee verschillende perspectieven besproken rond het onderwerp of het leenstelsel invoeren wel of niet slecht was voor de Nederlandse studenten. Deze twee verschillende perspectieven hadden beide argumenten om hun claim te onderbouwen. Wij vinden dat de argumenten van perspectief 1, ookwel dat het leenstelsel negatief was voor de Nederlandse studenten, beter zijn dan de argumenten van perspectief 2. Dit is omdat wij de argumenten van perspectief 1 over belangrijkere onderwerpen vinden gaan dan de argumenten van perspectief 2. Hierom sluiten wij ons aan bij de stelling dat het leenstelsel negatief was voor de Nederlandse studenten.</p>
+</section>
+<section id="reflectie">
+<h2>Reflectie<a class="headerlink" href="#reflectie" title="Permalink to this headline">#</a></h2>
+<p>In de reflectie van onze TA en medestudenten hebben we te horen gekregen dat de opbouw van onze draft niet geheel logisch was en misschien wat kon worden verbeterd. De draft had namelijk afwisselende perspectieven. We hebben daarom in het eindproduct gekozen om eerst het eerste perspectief in zijn geheel te behandelen en daarna het tweede perspectief in zijn geheel.
+Ook hebben we de feedback gekregen dat de variatie van onze visualisaties niet voldoende was. We hebben daarom meer verschillende typen visualisaties toegevoegd in het eindproduct.
+De captions van de visualisaties waren aanwezig in de draft, maar waren eigenlijk te groot en probeerden de argumenten ook uit te leggen. Dit is in het veranderd zodat de captions alleen nog maar de figuur beschrijven en de argumentatie buiten de captions valt.</p>
+</section>
+<section id="werkverdeling">
+<h2>Werkverdeling<a class="headerlink" href="#werkverdeling" title="Permalink to this headline">#</a></h2>
+<p>Abe: Groepsgenoten bij elkaar gezocht. Onderwerp bedacht. Het Jupyter Book gemaakt. Draftversie Jupyter Notebook gemaakt. Datasets gedownload. Teksten gecontrolleerd op spellings- en grammaticafouten. Vijf lijngrafieken gemaakt voor draft. Printscreens gemaakt van heads datasets voor proposal. Opzet eindproduct bedacht.</p>
+<p>Sam: Introductie geschreven. Beschrijvingen geschreven over twee datasets en de voorbewerking daarvan. Twee gebruikte datasets gevonden (Onderwijs; Uitgaven Aan Onderwijs En CBS/OESO Indicatoren &amp; Leerlingen En Studenten; Onderwijssoort, Woonregio). Meegeholpen bij het bepalen van de twee verschillende perspectieven. Conclusie geschreven. Reflectie geschreven. Aanwezig geweest bij het reflectiemoment en project gepresenteerd.</p>
+<p>Sem: Contact gelegd met Abe om een groep te vormen. Datasets gefilterd. Datasets gemerged op jaren. Nieuwe relevante columns gecreëerd op basis van bestaande columns. Een aantal visualisaties bedacht en uitgewerkt. Diverse lijn grafieken gemaakt en de relevantie bepaald. Vindingen per grafiek opgeschreven en koppelingen met het onderwerp gemaakt.</p>
+<p>Shilana: Grafiek gemaakt met percentuele toenamen studenten per jaar. Meegedacht met het interpreteren van de datasets. Meegedacht met het kiezen van het onderwerp. Meegedacht met het maken van de opzet. Controlleren van het eindproduct op fouten.</p>
+</section>
+<section id="literatuurlijst">
+<h2>Literatuurlijst<a class="headerlink" href="#literatuurlijst" title="Permalink to this headline">#</a></h2>
+<p>Leerlingen en studenten; onderwijssoort, woonregio. (n.d.). CBS Statline. <a class="reference external" href="https://opendata.cbs.nl/statline#/CBS/nl/dataset/71450ned/table?ts=1687175132506">https://opendata.cbs.nl/statline#/CBS/nl/dataset/71450ned/table?ts=1687175132506</a></p>
+<p>Onderwijs; uitgaven aan onderwijs en CBS/OESO indicatoren. (n.d.). CBS Statline. <a class="reference external" href="https://opendata.cbs.nl/statline#/CBS/nl/dataset/80393ned/table?ts=1686669534168">https://opendata.cbs.nl/statline#/CBS/nl/dataset/80393ned/table?ts=1686669534168</a></p>
+<p>Ministerie van Algemene Zaken. (2023, 12 juni). Herinvoering basisbeurs en tegemoetkoming studenten. Hoger onderwijs | <a class="reference external" href="http://Rijksoverheid.nl">Rijksoverheid.nl</a>. <a class="reference external" href="https://www.rijksoverheid.nl/onderwerpen/hoger-onderwijs/herinvoering-basisbeurs-en-tegemoetkoming">https://www.rijksoverheid.nl/onderwerpen/hoger-onderwijs/herinvoering-basisbeurs-en-tegemoetkoming</a></p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="right-next"
+       href="Niet-gebruikte%20Grafieken.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Niet-gebruikte Grafieken</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introductie">Introductie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-en-voorbereiding">Dataset en voorbereiding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#het-eerste-perspectief">Het Eerste Perspectief</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#het-eerste-argument-voor-het-eerste-perspectief">Het eerste argument voor het eerste perspectief</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#het-tweede-argument-voor-het-eerste-perspectief">Het tweede argument voor het eerste perspectief</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#het-derde-argument-voor-het-eerste-perspectief">Het derde argument voor het eerste perspectief</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#het-tweede-perspectief">Het Tweede Perspectief</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#het-eerste-argument-voor-het-tweede-perspectief">Het eerste argument voor het tweede perspectief</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#het-tweede-argument-voor-het-tweede-perspectief">Het tweede argument voor het tweede perspectief</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusie">Conclusie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflectie">Reflectie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#werkverdeling">Werkverdeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#literatuurlijst">Literatuurlijst</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By group N2 / 60
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
