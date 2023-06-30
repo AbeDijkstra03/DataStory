@@ -3,3 +3,6 @@
 
 format: jb-book
 root: docs/home
+chapters:
+- file: docs/unused_graphs
+
