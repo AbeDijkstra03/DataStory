@@ -1,6 +1,6 @@
 ﻿# Originele Opzet Eindversie
 
-** Perspectief 1: het leenstelsel is slecht geweest.
+**Perspectief 1: het leenstelsel is slecht geweest.**
 
 - Argument 1.1: Studenten zijn minder gelukkig.
 
@@ -16,7 +16,7 @@ Figuur 3: density plot/histogram, hoe lager de inkomens, hoe hoger de studieschu
 
 (Slider voor inkomens, gelukkigheid?)
 
-** Perspectief 2: het leenstelsel is niet slecht geweest.
+**Perspectief 2: het leenstelsel is niet slecht geweest.**
 
 - Argument 2.1: het aantal studenten is blijven toenemen (waarom zouden we ze meer geld geven als de aantallen niet veranderen)
 
@@ -28,6 +28,6 @@ Figuur 5: connected scatter plot/area plot percentuele toename (met uitleg dat h
 
 Figuur 6: scatterplot
 
-** Conclusie:
+**Conclusie:**
 
 Het is niet gek dat de basisbeurs weer is ingevoerd, want (samenvatting argumenten)
