@@ -5,4 +5,4 @@ format: jb-book
 root: docs/Het Leenstelsel
 chapters:
 - file: docs/Niet-gebruikte Grafieken
-
+- file: docs/Originele Opzet Eindversie
